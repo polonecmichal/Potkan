@@ -1,0 +1,10 @@
+#program ktory zisti ci je cislo prvocislo true alebo nie false
+number = int(input("Zadaj cislo: "))
+countNumber = 0
+for delitel in range(2, number):
+    if number % delitel == 0:
+        countNumber += 1    #zvacsi premenu o 1
+if countNumber == 0:
+    print("Cislo je prvocislo")
+else:
+    print("Cislo nie je prvocislo") 
